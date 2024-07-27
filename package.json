@@ -1,0 +1,26 @@
+{
+	"name": "my-video",
+	"version": "1.0.0",
+	"description": "My Remotion video",
+	"repository": {},
+	"license": "UNLICENSED",
+	"dependencies": {
+		"@remotion/cli": "4.0.182",
+		"axios": "^1.7.2",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"react-icons": "^5.2.1",
+		"remotion": "4.0.182",
+		"zod": "3.22.3"
+	},
+	"devDependencies": {
+		"prettier": "^3.2.5"
+	},
+	"scripts": {
+		"start": "remotion studio",
+		"build": "remotion render Rotation out/Rotation.mp4 --concurrency=1 --props=props.json",
+		"upgrade": "remotion upgrade",
+		"test": "eslint src --ext ts,tsx,js,jsx"
+	},
+	"packageManager": "npm@10.2.4"
+}
